@@ -32,18 +32,21 @@ h1, header h2, h2, h3, h4, h5, h6 {
     .wrapper, header .wrapper, .intro-block, .process, .thoughts {
       padding: 0 2rem; } }
 
-input {
+input,
+textarea {
   padding: 0.5rem;
   border-radius: 0.25em;
   border: 0;
   outline: 0; }
-  input[type="submit"] {
+  input[type="submit"],
+  textarea[type="submit"] {
     background: #E91E63;
     color: white;
     -webkit-transition: all 0.15s ease-out 0s;
     -moz-transition: all 0.15s ease-out 0s;
     transition: all 0.15s ease-out 0s; }
-    input[type="submit"]:hover {
+    input[type="submit"]:hover,
+    textarea[type="submit"]:hover {
       cursor: pointer;
       background: #c1134e;
       -webkit-transition: all 0.15s ease-out 0s;
@@ -208,14 +211,21 @@ header {
     width: 100%;
     font-size: 0.8rem;
     margin-bottom: 0.25rem; }
-  .thoughts input {
+  .thoughts input,
+  .thoughts textarea {
     display: block;
     width: 100%; }
-    .thoughts input[type="text"], .thoughts input[type="email"] {
+    .thoughts input[type="text"], .thoughts input[type="email"],
+    .thoughts textarea[type="text"],
+    .thoughts textarea[type="email"] {
       color: #313b4b; }
-    .thoughts input[type="submit"] {
+    .thoughts input[type="submit"],
+    .thoughts textarea[type="submit"] {
       background: white;
       color: #E91E63; }
+  .thoughts textarea {
+    color: #313b4b;
+    height: 5rem; }
   @media screen and (max-width: 900px) {
     .thoughts {
       margin-bottom: 2rem; }
