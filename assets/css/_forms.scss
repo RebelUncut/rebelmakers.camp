@@ -1,0 +1,17 @@
+input,
+textarea {
+    padding: 0.5rem;
+    border-radius: 0.25em;
+    border: 0;
+    outline: 0;
+    &[type="submit"] {
+        background: $color--primary;
+        color: white;
+        @include transition;
+        &:hover {
+            cursor: pointer;
+            background: darken($color--primary, 10%);
+            @include transition;
+        }
+    }
+}

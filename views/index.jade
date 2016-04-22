@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  .intro-block
+    :marked
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dolorum, obcaecati reprehenderit laboriosam ex alias ipsam error porro dolore sapiente! Exercitationem, esse sunt. At reiciendis, saepe assumenda expedita magnam sint.
+  
+  .process: .container
+    h2 The process
+    ul.accordion-tabs-minimal
+      li.tab-header-and-content
+        a.tab-link.is-active(href='#') 1. Consultation
+        .tab-content
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.
+      li.tab-header-and-content
+        a.tab-link(href='#') 2. Planning
+        .tab-content
+          p
+            | Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac accumsan orci vulputate. Aenean fringilla massa vitae metus facilisis congue. Morbi placerat eros ac sapien semper pulvinar. Vestibulum facilisis, ligula a molestie venenatis, metus justo ullamcorper ipsum, congue aliquet dolor tortor eu neque. Sed imperdiet, nibh ut vestibulum tempor, nibh dui volutpat lacus, vel gravida magna justo sit amet quam. Quisque tincidunt ligula at nisl imperdiet sagittis. Morbi rutrum tempor arcu, non ultrices sem semper a. Aliquam quis sem mi.
+      li.tab-header-and-content
+        a.tab-link(href='#') 3. Venue &amp; Sponsors
+        .tab-content
+          p
+            | Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.
+      li.tab-header-and-content
+        a.tab-link(href='#') 4. Programming
+        .tab-content
+          p
+            | Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.
+      li.tab-header-and-content
+        a.tab-link(href='#') 5. Event
+        .tab-content
+          p
+            | Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.
+
+  
+  .thoughts: .box
+    h2 We want your thoughts! 
+    p Regardless of what capacity you want to be involved, you definitely have thoughts about what you would like to see, and we want to here them! 
+    form(action="")
+      .input-group
+        label(for="name") Name
+        input(type="text", placeholder="Name", id="name")
+      .input-group
+        label(for="email") Email
+        input(type="email", placeholder="Email", id="email")
+      .input-group
+        label(for="role") What's your interest in this event?
+        textarea(placeholder="Particpant? Sponsor? Workshop?", id="role")
+      input(type="submit", value="Submit")

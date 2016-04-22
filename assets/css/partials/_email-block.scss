@@ -1,0 +1,32 @@
+.email-block {
+    background: $color--light-grey;
+    padding: 1rem 0;
+    text-align: center;
+    .wrapper * {
+        display: inline;
+    }
+    h2 {
+        font-size: $font--size__small;
+        margin: 0;
+    }
+    input[type="email"] {
+        min-width: 40%;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .email-block {
+        .wrapper * {
+            display: block;
+            width: 100%;
+            margin: 0 !important;
+        }
+        h2 {
+            font-size: $font--size;
+        }
+        input[type="email"] {
+            margin: 1rem 0 !important;
+        }
+    }
+}

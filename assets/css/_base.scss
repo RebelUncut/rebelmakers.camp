@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $color__text;
+}
+
+body {
+    font-family: $font__body;
+    font-size: $font__size;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font__header;
+    font-weight: 700;
+}
+
+.wrapper {
+    @include outer-container;
+    padding: 0 $column + $gutter;
+    @media screen and (max-width: 900px) {
+    	padding: 0 2rem;
+	}
+}

@@ -1,0 +1,53 @@
+@mixin button($color: $color__primary) {
+    background: $color;
+    color: white;
+    padding: 0.5em 1em;
+    display: inline-block;
+    @include transition;
+    &:hover {
+        background:darken($color, 10%);
+        @include transition;
+    }
+}
+
+@mixin placeholder-color($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin breakpoint($name) {
+    @if map-has-key($breakpoints, $name) {
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "Couldn't find a breakpoint named `#{$name}`.";
+  }
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin selection($color, $background) {
+	::selection {
+		background: $background;
+		color: $color;
+	}
+	::-moz-selection {
+		background: $background;
+		color: $color;
+	}
+}

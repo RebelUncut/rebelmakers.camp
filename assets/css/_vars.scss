@@ -1,0 +1,35 @@
+// Team Rebel Colors
+
+$color__labs: #00b4a0;
+$color__uncut: #5F4273;
+$color__uncut--secondary: #F47B26;
+$color__makers: #E91E63;
+
+$color__dark-grey: rgb(49, 59, 75);
+$color__light-grey: #F6F6F3;
+
+// Color Usage
+
+$color__text: $color__dark-grey;
+$color__primary: $color__makers;
+$color__secondary: $color__labs;
+
+// Type
+
+$font__body: "futura-pt", "Roboto", sans-serif !important;
+$font__header: "futura-pt", "Roboto", sans-serif;
+
+$font__size: 16px;
+$font__size--small: $font__size * 0.75;
+$font__size--subheader--2: $font__size * 1.25;
+$font__size--subheader: $font__size * 1.5;
+$font__size--header: $font__size * 2;
+$font__size--header-big: $font__size * 2.5;
+
+// Breakpoints
+
+$breakpoints: (
+  'small':  ( min-width:  600px ),
+  'medium': ( min-width:  900px ),
+  'large':  ( min-width: 1200px )
+);

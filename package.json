@@ -1,0 +1,13 @@
+{
+  "name": "-rebel-makers-camp",
+  "description": "Rebel Makers Camp is an awesome one day event in October",
+  "dependencies": { 
+    "coffee-script": "^1.0.0",
+    "css-pipeline": "0.3.x",
+    "jade": "^1.0.0",
+    "js-pipeline": "0.2.x",
+    "jstransformer-marked": "^1.0.0",
+    "marked": "0.3.x",
+    "node-sass": "*"
+  }
+}

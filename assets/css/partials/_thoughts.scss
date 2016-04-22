@@ -1,0 +1,56 @@
+.thoughts {
+    @extend .wrapper;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    .box {
+        @include span-columns(8 of 12);
+        @include shift(2 of 12);
+        background: $color--primary;
+        border-radius: 0.25rem;
+        padding: 1rem;
+    }
+    * {
+        color: white;
+    }
+    h2 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+    }
+    .input-group {
+        margin-bottom: 1rem;
+    }
+    label {
+        display: block;
+        width: 100%;
+        font-size: 0.8rem;
+        margin-bottom: 0.25rem;
+    }
+    input,
+    textarea {
+        display: block;
+        width: 100%;
+        &[type="text"],
+        &[type="email"] {
+            color: $color__text;
+        }
+        &[type="submit"] {
+            background: white;
+            color: $color--primary;
+        }
+    }
+    textarea {
+        color: $color__text;
+        height: 5rem;
+    }
+    @media screen and (max-width: 900px) {
+        margin-bottom: 2rem;
+        .box {
+            @include span-columns(12);
+            @include shift(0);
+        }
+    }
+}

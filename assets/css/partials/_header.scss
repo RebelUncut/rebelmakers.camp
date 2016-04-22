@@ -1,0 +1,28 @@
+header {
+    background: $color--primary;
+    padding: 3rem 0;
+    .wrapper {
+        @extend .wrapper;
+    }
+    img {
+        @include span-columns(3 of 12);
+        @include shift(4.5 of 12);
+    }
+    h1 {
+        @include span-columns(12);
+        color: white;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    h2 {
+        @extend h1;
+        margin-top: 0;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 0.75em;
+        img {
+            @include span-columns(6 of 12);
+            @include shift(3 of 12);   
+        }
+	}
+}
